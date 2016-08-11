@@ -23,7 +23,7 @@ Neko::Neko(string s){
     name =s;
 }
 //or
-// Neko::Neko(string s)::name(s){};
+// Neko::Neko(string s):name(s){};
 
 void Neko::naku(){
     std::cout << name << "nyawn" << endl;
