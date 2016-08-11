@@ -15,21 +15,23 @@ private:
     string name;
     
 public:
-    Neko(string s){
-        name =s;
-    }
-    void naku(){
-        std::cout << name << "nyawn" << endl;
-    }
+    Neko(string s);
+    void naku();
 };
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    //string name;
-    //std::cout << "Hello, World!\n";
-    //std::cin >> name;
-    //std::cout << name << "さんよろしく";
+Neko::Neko(string s){
+    name =s;
+}
+//or
+// Neko::Neko(string s)::name(s){};
 
+void Neko::naku(){
+    std::cout << name << "nyawn" << endl;
+}
+
+
+
+int main(int argc, const char * argv[]) {
     string name;
     std::cin >> name;
     
